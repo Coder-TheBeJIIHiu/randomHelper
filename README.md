@@ -1,18 +1,18 @@
 # RandomHelper
 
-[![npm version](https://badge.fury.io/js/randomhelper.svg)](https://www.npmjs.com/package/randomhelper)
+[![npm version](https://badge.fury.io/js/rand-helper.svg)](https://www.npmjs.com/package/rand-helper)
 [![GitHub license](https://img.shields.io/github/license/Coder-TheBeJIIHiu/randomHelper)](https://github.com/Coder-TheBeJIIHiu/randomHelper/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/Coder-TheBeJIIHiu/randomHelper)](https://github.com/Coder-TheBeJIIHiu/randomHelper/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Coder-TheBeJIIHiu/randomHelper)](https://github.com/Coder-TheBeJIIHiu/randomHelper/stargazers)
 
-The module `randomhelper` is a JavaScript library designed to generate random values of different data types and manipulate numbers.
+The module `rand-helper` is a JavaScript library designed to generate random values of different data types and manipulate numbers.
 
 ## Installation
 
-To install the `randomhelper` module, run the following command:
+To install the `rand-helper` module, run the following command:
 
 ```
-npm install randomhelper
+npm install rand-helper
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm install randomhelper
 Examples of module usage:
 
 ```js
-const { getRandomInt, getRandomString, getRandomElement, getRandomIntArray, getRandomHex, getRandomRGB, getRandomHSV, getRandomBoolean } = require('randomhelper');
+const { getRandomInt, getRandomString, getRandomElement, getRandomIntArray, getRandomHex, getRandomRGB, getRandomHSV, getRandomBoolean } = require('rand-helper');
 
 // Generation of a random integer between 0 and 10
 const randomNumber = getRandomInt(0, 10); // 4
