@@ -49,7 +49,7 @@ const randomRGB = getRandomRGB({ // It is not necessary to transfer options
   useArray: false
 }) // rgba(224, 50, 129, 0.24)
 
-const randomHSV = getRandomHSA({ // It is not necessary to transfer options
+const randomHSV = getRandomHSV({ // It is not necessary to transfer options
   includeAlpha: true,
   useArray: false
 }) // hsva(343, 0.49, 0.33, 0.55)

@@ -1,3 +1,5 @@
+const I = require("./int.js");
+
 /**
  * Generates a random boolean value.
  *
