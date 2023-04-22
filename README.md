@@ -1,7 +1,7 @@
 # RandomHelper
 
 [![npm version](https://badge.fury.io/js/rand-helper.svg)](https://www.npmjs.com/package/rand-helper)
-[![GitHub license](https://img.shields.io/github/license/Coder-TheBeJIIHiu/randomHelper)](https://github.com/Coder-TheBeJIIHiu/randomHelper/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Coder-TheBeJIIHiu/randomHelper)](https://github.com/Coder-TheBeJIIHiu/randomHelper/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/Coder-TheBeJIIHiu/randomHelper)](https://github.com/Coder-TheBeJIIHiu/randomHelper/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Coder-TheBeJIIHiu/randomHelper)](https://github.com/Coder-TheBeJIIHiu/randomHelper/stargazers)
 
