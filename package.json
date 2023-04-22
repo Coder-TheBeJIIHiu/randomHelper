@@ -1,7 +1,7 @@
 {
   "name": "rand-helper",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "The module rand-helper is a JavaScript library designed to generate random values of different data types and manipulate numbers.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
