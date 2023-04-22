@@ -20,7 +20,7 @@ npm install randomhelper
 Examples of module usage:
 
 ```js
-const { getRandomInt, getRandomString, getRandomElement, getRandomIntArray, getRandomHex, getRandomRGB, getRandomHSV } = require('randomhelper');
+const { getRandomInt, getRandomString, getRandomElement, getRandomIntArray, getRandomHex, getRandomRGB, getRandomHSV, getRandomBoolean } = require('randomhelper');
 
 // Generation of a random integer between 0 and 10
 const randomNumber = getRandomInt(0, 10); // 4
@@ -53,4 +53,6 @@ const randomHSV = getRandomHSA({ // It is not necessary to transfer options
   includeAlpha: true,
   useArray: false
 }) // hsva(343, 0.49, 0.33, 0.55)
+
+const randomBoolean = getRandomBoolean() // false
 ```
