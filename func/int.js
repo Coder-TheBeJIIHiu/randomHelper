@@ -1,4 +1,4 @@
-const _ = require('lodash');
+const F = require('./F.js');
 const l = require('crypto');
 
 /**
@@ -18,7 +18,7 @@ module.exports = (m, M) => {
     throw new Error('m must be less than M' + m);
   }
 
-  const f = _.range(m, M + 1);
+  const f = F.range(m, M + 1);
 
   for (let i = f.length - 1; i > 0; i--) {
     const j = Math.floor(l.randomInt(i + 1));

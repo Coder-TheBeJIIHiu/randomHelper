@@ -1,3 +1,1 @@
-const { F } = require('./index.js')
-
-console.log(F.range())
+// Hello! I am Radmir and I am 19 years old! I love my girlfriend Arina <3
