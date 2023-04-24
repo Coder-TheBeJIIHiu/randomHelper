@@ -20,7 +20,7 @@ npm install git+https://github.com/Coder-TheBeJIIHiu/randomHelper   // for the l
 ```
 ## Telegram chat
 
-[CLICK](https://t.me/random_helper)
+[CLICK](https://bit.ly/41FoOkI)
 
 ![GROUP](https://im.wampi.ru/2023/04/24/image0cb06d72ab8eb808.png)
 ## Usage
