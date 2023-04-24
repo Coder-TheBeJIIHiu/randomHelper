@@ -85,7 +85,7 @@ const myRange = F.range(1, 10); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 const myChunks = F.chunk(myArray, 3); // [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]
 
 // Sort data by name (in alphabetical order)
-const dataSortedByName = F.soryBy(data, { sortby: 'name' });
+const dataSortedByName = F.sortBy(data, { sortby: 'name' });
   
 // Output: [
 //   { name: 'Alice', age: '32' },
@@ -97,7 +97,7 @@ const dataSortedByName = F.soryBy(data, { sortby: 'name' });
 // ]
   
 // Sort data by age (in ascending order)
-const dataSortedByAge = F.soryBy(data, { sortby: 'age', numeric: true });
+const dataSortedByAge = F.sortBy(data, { sortby: 'age', numeric: true });
 
 // Output: [
 //   { name: 'Eve', age: '5' },
@@ -109,7 +109,7 @@ const dataSortedByAge = F.soryBy(data, { sortby: 'age', numeric: true });
 // ]
   
 // Sort data by age (in descending order)
-const dataSortedByAgeDesc = F.soryBy(data, { sortby: 'age', numeric: true, reverse: true });
+const dataSortedByAgeDesc = F.sortBy(data, { sortby: 'age', numeric: true, reverse: true });
 
 // Output: [
 //   { name: 'Frank', age: '100' },

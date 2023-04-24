@@ -64,7 +64,7 @@ const debouncedFunc = (f, t, o = {}) => debounced(f, t, o);
 const F = {
   range: rangeFunc,
   chunk: chunkFunc,
-  soryBy: sortByFunc,
+  sortBy: sortByFunc,
   debounced: debouncedFunc
 }
 
