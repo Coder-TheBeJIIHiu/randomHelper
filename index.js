@@ -4,6 +4,7 @@ const getRandomString = require("./func/string.js")
 const getRandomElement = require("./func/element.js")
 const { getRandomHex, getRandomRGB, getRandomHSV } = require("./func/color.js")
 const getRandomBoolean = require("./func/boolean.js")
+const F = require("./func/F.js")
 
 module.exports = {
 	getRandomInt,
@@ -13,5 +14,6 @@ module.exports = {
 	getRandomHex,
 	getRandomRGB,
 	getRandomHSV,
-	getRandomBoolean
+	getRandomBoolean,
+	F
 }
