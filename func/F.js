@@ -51,7 +51,7 @@ const sortByFunc = (arr, options = {}) => sortby(arr, options);
 /**
  * Limits the rate at which a function can be called.
  * @memberof F
- * @function sortby
+ * @function debounced
  * @param {Function} f - The function to debounce.
  * @param {number} t - The number of milliseconds to delay.
  * @param {Object} [o={}] - The options object.
