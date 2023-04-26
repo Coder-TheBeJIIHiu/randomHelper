@@ -132,7 +132,7 @@ if (index === -1) {
     console.log('No item was dropped.');
 } else {
     const itemName = items[index].n;
-    console.log(`You got a ${itemName}!`); // You got a Sppon
+    console.log(`You got a ${itemName}!`); // You got a Spoon!
 }
 ```
 
