@@ -119,6 +119,21 @@ const dataSortedByAgeDesc = F.sortBy(data, { sortby: 'age', numeric: true, rever
 //   { name: 'Dave', age: '19' },
 //   { name: 'Eve', age: '5' }
 // ]
+
+const items = [
+    { n: 'Apple', dropChance: 1 },
+    { n: 'Knife', dropChance: 20 },
+    { n: 'Spoon', dropChance: 50 },
+    { n: 'Ice Cream', dropChance: 70 }
+];
+const index = F.drop(items);
+  
+if (index === -1) {
+    console.log('No item was dropped.');
+} else {
+    const itemName = items[index].n;
+    console.log(`You got a ${itemName}!`); // You got a Sppon
+}
 ```
 
 ### F.debounced example
