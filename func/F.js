@@ -1,3 +1,5 @@
+const I = require('./int.js')
+
 /**
  * A collection of utility functions.
  * @namespace F
@@ -7,7 +9,6 @@ const range = require("./F/range.js");
 const chunk = require("./F/chunk.js");
 const sortby = require("./F/sortby.js");
 const debounced = require("./F/debounced.js");
-const drop = require("./F/drop.js");
 
 /**
  * Generates an array of numbers in a specified range.
@@ -62,23 +63,11 @@ const sortByFunc = (arr, options = {}) => sortby(arr, options);
  */
 const debouncedFunc = (f, t, o = {}) => debounced(f, t, o);
 
-/**
- * Selects a random item from an array of objects with a weighted probability based on the "dropChance" property.
- * @memberof F
- * @function drop
- * @param {Array<Object>} a - The array of objects to choose from. Each object must have a "dropChance" property that
- * represents the probability of that object being selected. The sum of all "dropChance" values in the array should be 1.
- * @returns {number} - The index of the selected item in the array, or -1 if no item was selected.
- * @throws {TypeError} - If the argument is not an array or contains objects without a "dropChance" property.
- */
-const dropFunc = (a) => drop(a);
-
 const F = {
   range: rangeFunc,
   chunk: chunkFunc,
   sortBy: sortByFunc,
   debounced: debouncedFunc,
-  drop: dropFunc
 }
 
 module.exports = F

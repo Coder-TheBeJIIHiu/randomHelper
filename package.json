@@ -1,6 +1,6 @@
 {
   "name": "rand-helper",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "The module rand-helper is a JavaScript library designed to generate random values of different data types and manipulate numbers.",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,8 @@
     "tools"
   ],
   "author": "Coder-TheBeJIIHiu",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }

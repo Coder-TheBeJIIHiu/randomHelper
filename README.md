@@ -5,8 +5,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/Coder-TheBeJIIHiu/randomHelper)](https://github.com/Coder-TheBeJIIHiu/randomHelper/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Coder-TheBeJIIHiu/randomHelper)](https://github.com/Coder-TheBeJIIHiu/randomHelper/stargazers)
 
-`rand-helper` is a JavaScript library designed to generate random values of different data types and manipulate numbers.
+`rand-helper` is a JavaScript library designed to generate random values of different data types and manipulate numbers. The module uses 5 algorithms to generate a random number.
 
+# There may be mistakes! I did not finish some algorithms, some module functions may not work
 ## Installation
 
 To install the `rand-helper` module, run one of the following commands:
@@ -28,7 +29,7 @@ npm install git+https://github.com/Coder-TheBeJIIHiu/randomHelper   // for the l
 ### Examples
 
 ```js
-const { getRandomInt, getRandomString, getRandomElement, getRandomIntArray, getRandomHex, getRandomRGB, getRandomHSV, getRandomBoolean } = require('rand-helper');
+const { getRandomInt, getRandomString, getRandomElement, getRandomIntArray, getRandomHex, getRandomRGB, getRandomHSV, getRandomBoolean, dropChance } = require('rand-helper');
 
 // Generate a random integer between 0 and 10
 const randomNumber = getRandomInt(0, 10); // 4
@@ -63,6 +64,21 @@ const randomHSV = getRandomHSV({
 }); // hsva(343, 0.49, 0.33, 0.55)
 
 const randomBoolean = getRandomBoolean(); // false
+
+const items = [
+    { n: 'Apple', dropChance: 1 },
+    { n: 'Knife', dropChance: 20 },
+    { n: 'Spoon', dropChance: 50 },
+    { n: 'Ice Cream', dropChance: 70 }
+];
+const index = dropChance(items);
+  
+if (index === -1) {
+    console.log('No item was dropped.');
+} else {
+    const itemName = items[index].n;
+    console.log(`You got a ${itemName}!`); // You got a Spoon!
+}
 ```
 
 ### F module
@@ -119,21 +135,6 @@ const dataSortedByAgeDesc = F.sortBy(data, { sortby: 'age', numeric: true, rever
 //   { name: 'Dave', age: '19' },
 //   { name: 'Eve', age: '5' }
 // ]
-
-const items = [
-    { n: 'Apple', dropChance: 1 },
-    { n: 'Knife', dropChance: 20 },
-    { n: 'Spoon', dropChance: 50 },
-    { n: 'Ice Cream', dropChance: 70 }
-];
-const index = F.drop(items);
-  
-if (index === -1) {
-    console.log('No item was dropped.');
-} else {
-    const itemName = items[index].n;
-    console.log(`You got a ${itemName}!`); // You got a Spoon!
-}
 ```
 
 ### F.debounced example
